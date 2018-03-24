@@ -1,10 +1,7 @@
 <p align="center">
     <h1 align="center">NOTES FOR THIS</h1>
-    <br>
 </p>
-
 ...
-
 NOTING......
 -------------------
 ```
