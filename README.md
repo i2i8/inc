@@ -3,6 +3,6 @@
     <br>
 </p>
 
-001、gii or debug
+001、gii or debug<br>
 	'allowedIPs' => ['127.0.0.1', '::1'],
 	......
