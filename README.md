@@ -7,5 +7,5 @@ NOTING......
 -------------------
 ```
 gii or debug
-    main-local.php       contains 'allowedIPs' => ['127.0.0.1', '::1'],
+    main-local.php       'allowedIPs' => ['127.0.0.1', '::1'],
 ```
