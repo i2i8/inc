@@ -30,7 +30,7 @@ class m180320_014346_aroom extends Migration
         // 依次为：索引名称,表名，用哪些字段来创建索引值，若是多字段的话，可以都写里头，第四个true表示是否是唯一性的。
         // 最后一个参数慎用，尤其在有外键约束的情况下，只能false，否则，从表关联字段不能被重复写入，造成数据入库失败。
         $this->createIndex('rmidIndex', self::TBL_AROOM, 'rmid', false);
-        $this->addForeignKey('rmid_adepForeignKey' , self::TBL_AROOM , 'rmid' , '{{%adep}}' , 'rdid' , 'CASCADE', 'CASCADE');
+        $this->addForeignKey('rmid_adepForeignKey' , self::TBL_AROOM , 'rmid' , '{{%adep}}' , 'did' , 'CASCADE', 'CASCADE');
     }
     public function safeDown()
     {

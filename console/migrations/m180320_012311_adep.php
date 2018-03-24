@@ -27,7 +27,7 @@ class m180320_012311_adep extends Migration
                 //调整时间
                 'updated' 	=> $this->timestamp()->COMMENT('调整时间'),
         ], $tableOptions);
-        $this->createIndex('rdidIndex', self::TBL_ADEP, 'rdid', false);
+        $this->createIndex('rdidIndex', self::TBL_ADEP, 'did', false);
         // 依次为：索引名称,表名，用哪些字段来创建索引值，若是多字段的话，可以都写里头，第四个true表示是否是唯一性的。
         // 最后一个参数慎用，尤其在有外键约束的情况下，只能false，否则，从表关联字段不能被重复写入，造成数据入库失败。
         //$this->createIndex('rmidIndex', self::TBL_AROOM, 'rmid', false);
