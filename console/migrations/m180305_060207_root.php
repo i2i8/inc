@@ -19,11 +19,11 @@ class m180305_060207_root extends Migration
         
         $this->createTable(self::TBL_ROOT, [
             'id' => $this->primaryKey(),
-            'username' => $this->string()->notNull()->unique(),
-            'auth_key' => $this->string(32)->notNull(),
+            'username' => $this->string()->notNull()->unique()->COMMENT('索引'),
+            'auth_key' => $this->string(32)->Null(),
             'password_hash' => $this->string()->notNull(),
-            'password_reset_token' => $this->string()->unique(),
-            'email' => $this->string()->notNull()->unique(),
+            'password_reset_token' => $this->string()->unique()->COMMENT('索引'),
+            'email' => $this->string()->notNull()->unique()->COMMENT('索引'),
             
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'created_at' => $this->integer()->notNull(),
